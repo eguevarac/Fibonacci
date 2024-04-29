@@ -22,18 +22,17 @@ public class Calculador extends Thread {
 
     private void afegirNumero() {
         Integer ultimNum = fibonacci.get(fibonacci.size() - 1);
-        //System.out.println("Último número de la lista -> " + ultimNum);
         Integer penultimNum = fibonacci.get(fibonacci.size() - 2);
-        //System.out.println("Penúltimo número de la lista -> " + penultimNum);
         Integer resultadoSuma = ultimNum + penultimNum;
         float proporcion = (float) resultadoSuma / ultimNum;
+
         try {
             sleep(20);
         } catch (InterruptedException e) {
             System.out.println("Error en el sleep");
         }
+
         fibonacci.add(resultadoSuma);
-        //System.out.println(this.getName());
         System.out.println(this.getName() + ": " + resultadoSuma + " (" + proporcion + ")");
     }
 }

@@ -19,7 +19,5 @@ public class Fibonacci {
         fibonacci = new ArrayList<>();
         fibonacci.add(0);
         fibonacci.add(1);
-        //System.out.println("Primer número de la lista -> " + fibonacci.get(0));
-        //System.out.println("Segundo número de la lista -> " + fibonacci.get(1));
     }
 }
